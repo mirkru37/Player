@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bottom_dialog_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            android:gravity="center|center_vertical"
+            android:background="@drawable/ripple_bg"
+            android:layout_marginTop="@dimen/musicItemMargin"
+            android:layout_marginBottom="@dimen/musicItemMargin">
+            <ImageView
+                android:layout_width="@dimen/nestedHomeMargin"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit_white"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textSmallSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_to_pl"
+            android:gravity="center|center_vertical"
+            android:background="@drawable/ripple_bg"
+            android:layout_marginBottom="@dimen/musicItemMargin">
+            <ImageView
+                android:layout_width="@dimen/nestedHomeMargin"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_to_pl_white"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to playlist"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textSmallSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/musicItemMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/share"
+            android:gravity="center|center_vertical"
+            android:background="@drawable/ripple_bg">
+            <ImageView
+                android:layout_width="@dimen/nestedHomeMargin"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_white"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textSmallSize"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/musicItemMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg"
+                android:id="@+id/add_next">
+            <ImageView
+                android:layout_width="@dimen/nestedHomeMargin"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next_in_list_white"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play next"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textSmallSize"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_bg"
+                android:id="@+id/add_last">
+                <ImageView
+                    android:layout_width="@dimen/nestedHomeMargin"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_last_in_list_white"/>
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play last"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/textSmallSize"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_song"
+            android:background="@drawable/ripple_bg"
+            android:gravity="center|center_vertical">
+            <ImageView
+                android:layout_width="@dimen/nestedHomeMargin"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_white"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:text="DELETE"
+                android:textColor="@color/colorTextAlert"
+                android:textSize="@dimen/textItemSmallSize"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.dev.umieplayer.MyViewPager
+        android:id="@+id/mainPager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+    </com.dev.umieplayer.MyViewPager>
+
+    <com.felixsoares.animatedbottombar.ui.BottomBar
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomNawBarHeight" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/musicControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottomNawBarIndicator"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/current_play_layout"></FrameLayout>
+
+</RelativeLayout>

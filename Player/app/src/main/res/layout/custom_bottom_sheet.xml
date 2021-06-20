@@ -1,0 +1,64 @@
+ <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+     android:background="@color/bottom_dialog_bg">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/add_songs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                android:text="Add Songs"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textItemSmallSize"
+                />
+
+            <Button
+                android:id="@+id/change_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:text="Change Name"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textItemSmallSize"
+                />
+
+            <Button
+                android:id="@+id/change_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                android:text="Change Image"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textItemSmallSize"
+                />
+
+
+            <Button
+                android:id="@+id/delete_pl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                android:text="DELETE"
+                android:textColor="@color/colorTextAlert"
+                android:textSize="@dimen/textItemSmallSize"
+                android:textStyle="bold"
+            />
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

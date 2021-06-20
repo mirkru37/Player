@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/musicItemMargin">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/backgroundColorLight">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Genre"
+        android:textSize="@dimen/textSize"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
+        android:fontFamily="@font/roboto_bold"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

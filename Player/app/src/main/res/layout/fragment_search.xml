@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchFragment"
+    android:background="@drawable/background_dark_1">
+    <LinearLayout
+        android:id="@+id/id"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.SearchFragment"
+        android:background="@drawable/background_dark_1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_head"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold"
+            android:id="@+id/search_text"
+            android:textSize="@dimen/size_head"/>
+        <EditText
+            android:layout_width="350dp"
+            android:id="@+id/search_view"
+            android:layout_height="@dimen/search_height"
+            android:hint="@string/title_search"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@color/colorTextPrimary"
+
+
+            android:layout_marginTop="@dimen/margin_objects"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

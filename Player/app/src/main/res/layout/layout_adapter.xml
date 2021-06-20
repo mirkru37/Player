@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/musicItemHeight"
+    android:id="@+id/item_layout"
+    android:layout_marginBottom="@dimen/musicItemMarginBottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/tap_area"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="@dimen/musicItemHeight"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/musicItemMargin">
+
+        <ImageView
+            android:id="@+id/cmImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/cmPlayPause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/musicItemMargin">
+        <TextView
+            android:id="@+id/cmName"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/textItemSize"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/cmAuthor_Album"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/textItemSmallSize"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/itemMenu"
+        android:layout_width="@dimen/musicItemHeight"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_dots_white" />
+
+</LinearLayout>

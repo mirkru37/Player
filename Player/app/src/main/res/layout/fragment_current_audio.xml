@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CurrentAudioFragment"
+    android:background="@drawable/background_current_audio"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_back_white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/itemCount"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/textSmallSize"
+            android:fontFamily="@font/roboto_bold"/>
+        <ImageView
+            android:id="@+id/buttonMenu"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_dots_white" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/nestedHomeMargin"
+        android:id="@+id/currentAudioImages"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="@dimen/currentAudioHeight"></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/musicItemMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/songName"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/textSize"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Name"/>
+
+    <TextView
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/songArtist"
+        android:textAlignment="center"
+        android:textColor="@color/textAccent"
+        android:textSize="@dimen/textSmallSize"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Artist"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seekBarHeight"
+        android:layout_marginTop="@dimen/musicItemHeight">
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/currentTime"
+            android:maxLines="1"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/musicItemMargin"
+            android:layout_width="@dimen/currentTimeTextWidth"
+            android:textSize="@dimen/textItemSmallSize"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="1:25"/>
+
+        <rm.com.audiowave.AudioWaveView
+            android:id="@+id/seekBar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_toEndOf="@+id/currentTime"
+            android:layout_toStartOf="@+id/audioTime"
+            app:animateExpansion="true"
+            app:chunkWidth="3dp"
+            app:chunkHeight="24dp"
+            app:minChunkHeight="8dp"
+            app:chunkSpacing="1dp"
+            app:chunkRadius="1dp"
+            app:touchable="true"
+            app:waveColor="@android:color/white"
+            ></rm.com.audiowave.AudioWaveView>
+
+        <TextView
+            android:maxLines="1"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/audioTime"
+            android:layout_marginRight="@dimen/musicItemMargin"
+            android:layout_width="@dimen/currentTimeTextWidth"
+            android:textSize="@dimen/textItemSmallSize"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="2:00"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/musicItemHeight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/currentAudioControlHeight"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="4dp"
+            android:id="@+id/downButt"
+            android:src="@drawable/ic__arrow_down"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/nestedHomeMargin"
+            android:layout_toRightOf="@+id/nextButt"
+            android:layout_width="@dimen/seekBarHeight"
+            android:layout_height="@dimen/seekBarHeight" />
+
+        <ImageView
+            android:id="@+id/nextButt"
+            android:src="@drawable/ic_skip_next"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/nestedHomeMargin"
+            android:layout_toRightOf="@+id/playPauseButt"
+            android:layout_width="@dimen/seekBarHeight"
+            android:layout_height="@dimen/seekBarHeight" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/playPauseButt"
+            android:src="@drawable/ic_play"
+            android:layout_width="@dimen/currentAudioControlHeight"
+            android:layout_height="@dimen/currentAudioControlHeight" />
+        <ImageView
+            android:id="@+id/prevButt"
+            android:src="@drawable/ic_skip_previous"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/nestedHomeMargin"
+            android:layout_toLeftOf="@+id/playPauseButt"
+            android:layout_width="@dimen/seekBarHeight"
+            android:layout_height="@dimen/seekBarHeight" />
+
+        <ImageView
+            android:padding="4dp"
+            android:id="@+id/playingMode"
+            android:src="@drawable/ic_shuffle"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/nestedHomeMargin"
+            android:layout_toLeftOf="@+id/prevButt"
+            android:layout_width="@dimen/seekBarHeight"
+            android:layout_height="@dimen/seekBarHeight" />
+
+    </RelativeLayout>
+
+</LinearLayout>

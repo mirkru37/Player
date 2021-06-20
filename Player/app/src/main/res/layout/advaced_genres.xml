@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialogWidth"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/play_button_corner_radius">
+    <EditText
+        android:id="@+id/search"
+        android:singleLine="true"
+        android:background="@color/backgroundColorLight"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/textSize"
+        android:hint="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/genreChooser"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

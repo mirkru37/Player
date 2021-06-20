@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryRipple">#423F51B5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextAlert">#D63131</color>
+    <color name="bottom_dialog_bg">#2E2E2E</color>
+    <color name="colorTextPrimaryHint">#7EFFFFFF</color>
+    <color name="textAccent">#E716E0</color>
+    <color name="colorSelected">#7C08B6</color>
+    <color name="backgroundColor">#2E2E2E</color>
+    <color name="backgroundColorLight">#252525</color>
+    <color name="dradientCircleColor1">#31D6C1</color>
+    <color name="gradientBackground">#2E2E2E</color>
+    <color name="dradientCircleColor2">#35E89E</color>
+    <color name="dradientCircleColor3">#3BFF76</color>
+    <color name="dradientCircleColor4">#2AE82D</color>
+    <color name="dradientCircleColor5">#72FF2E</color>
+    <color name="dradientCircleColor6">#A8E81E</color>
+    <color name="dradientCircleColor7">#FFFD21</color>
+    <color name="dradientCircleColor8">#FFFA75</color>
+</resources>
